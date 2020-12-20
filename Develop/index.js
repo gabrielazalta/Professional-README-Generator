@@ -74,44 +74,44 @@ const questions = [
 ];
 
 //if user wamts to include credits, ask the following:
-        {
-            type: 'input',
-            name: 'collabName',
-            message: 'What is the name of your collaborator? (Required)',
-            validate: collabInput => {
-                if (collabInput) {
-                    return true;
-                } else {
-                    console.log("Please provide a name!");
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'collabLink',
-            message: 'Provide the GitHub link for your collaborator (Required)',
-            validate: linkInput => {
-                if (linkInput) {
-                    return true;
-                } else {
-                    console.log("Please provide a GitHub link!");
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'confirm',
-            name: 'assets',
-            message: 'Would you like to include any third-party assets that require attribution?',
-            default: false
-        },
-        {
-            type: 'confirm',
-            name: 'tutorials',
-            message: 'Would you like to include links to any tutorials used?',
-            default: false
-        }
+        // {
+        //     type: 'input',
+        //     name: 'collabName',
+        //     message: 'What is the name of your collaborator? (Required)',
+        //     validate: collabInput => {
+        //         if (collabInput) {
+        //             return true;
+        //         } else {
+        //             console.log("Please provide a name!");
+        //             return false;
+        //         }
+        //     }
+        // },
+        // {
+        //     type: 'input',
+        //     name: 'collabLink',
+        //     message: 'Provide the GitHub link for your collaborator (Required)',
+        //     validate: linkInput => {
+        //         if (linkInput) {
+        //             return true;
+        //         } else {
+        //             console.log("Please provide a GitHub link!");
+        //             return false;
+        //         }
+        //     }
+        // },
+        // {
+        //     type: 'confirm',
+        //     name: 'assets',
+        //     message: 'Would you like to include any third-party assets that require attribution?',
+        //     default: false
+        // },
+        // {
+        //     type: 'confirm',
+        //     name: 'tutorials',
+        //     message: 'Would you like to include links to any tutorials used?',
+        //     default: false
+        // }
 
 
 // TODO: Create a function to write README file
